@@ -11,7 +11,25 @@
 		0B7A33152A56AAA400CAD05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A33142A56AAA400CAD05C /* ContentView.swift */; };
 		0B7A33172A56AAAF00CAD05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A33162A56AAAF00CAD05C /* Assets.xcassets */; };
 		0B7A331A2A56AAAF00CAD05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A33192A56AAAF00CAD05C /* Preview Assets.xcassets */; };
+		0B7A333D2A56BEA300CAD05C /* DevRh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7A33392A56BE7600CAD05C /* DevRh.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B7A33382A56BE7600CAD05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7A33332A56BE7600CAD05C /* DevRh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B7A32EA2A56A2F700CAD05C;
+			remoteInfo = DevRh;
+		};
+		0B7A333A2A56BE7600CAD05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7A33332A56BE7600CAD05C /* DevRh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B7A32F42A56A2F800CAD05C;
+			remoteInfo = DevRhTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B7A330F2A56AAA400CAD05C /* Media365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Media365.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +37,7 @@
 		0B7A33142A56AAA400CAD05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B7A33162A56AAAF00CAD05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B7A33192A56AAAF00CAD05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B7A33332A56BE7600CAD05C /* DevRh.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DevRh.xcodeproj; path = ../DevRh/DevRh.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7A333D2A56BEA300CAD05C /* DevRh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +55,10 @@
 		0B7A33062A56AAA400CAD05C = {
 			isa = PBXGroup;
 			children = (
+				0B7A33332A56BE7600CAD05C /* DevRh.xcodeproj */,
 				0B7A33112A56AAA400CAD05C /* Media365 */,
 				0B7A33102A56AAA400CAD05C /* Products */,
+				0B7A333C2A56BEA300CAD05C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +87,22 @@
 				0B7A33192A56AAAF00CAD05C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B7A33342A56BE7600CAD05C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B7A33392A56BE7600CAD05C /* DevRh.framework */,
+				0B7A333B2A56BE7600CAD05C /* DevRhTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B7A333C2A56BEA300CAD05C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +151,35 @@
 			mainGroup = 0B7A33062A56AAA400CAD05C;
 			productRefGroup = 0B7A33102A56AAA400CAD05C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0B7A33342A56BE7600CAD05C /* Products */;
+					ProjectRef = 0B7A33332A56BE7600CAD05C /* DevRh.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0B7A330E2A56AAA400CAD05C /* Media365 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0B7A33392A56BE7600CAD05C /* DevRh.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DevRh.framework;
+			remoteRef = 0B7A33382A56BE7600CAD05C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B7A333B2A56BE7600CAD05C /* DevRhTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DevRhTests.xctest;
+			remoteRef = 0B7A333A2A56BE7600CAD05C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B7A330D2A56AAA400CAD05C /* Resources */ = {
