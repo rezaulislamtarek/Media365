@@ -11,9 +11,36 @@ import DevRh
 struct ContentView: View {
     var body: some View {
         VStack {
+            ZStack(){
+                Image("m365")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                     
+                    
+                
+                    VStack(alignment: .leading){
+                        Spacer()
+                        Text("Media 365 Limited")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .fontWeight(.bold)
+                        HStack{
+                            Text("Mohammadpur, Dhaka")
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text("12:32 PM")
+                                .foregroundColor(.white)
+                        }
+                    }.padding()
+                .background(Color.black.opacity(0.5))
+                
+            }
+            .edgesIgnoringSafeArea(.top)
+            .frame(maxHeight: 240)
              DevListView()
+            
         }
-        .padding()
+
     }
 }
 
